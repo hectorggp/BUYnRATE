@@ -1,0 +1,202 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:layout_weight="0.52"
+            android:src="@drawable/abc_ab_bottom_solid_dark_holo" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="318dp"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/quickContactBadge1"
+            android:layout_centerHorizontal="true"
+            android:text="LOGO" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="26dp"
+            android:text="MALL:" />
+
+            <EditText
+          android:id="@+id/mall"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_alignLeft="@+id/ratingBar1"
+          android:layout_below="@+id/imageView1"
+          android:layout_marginTop="0dp"
+          android:ems="10" />
+        
+        
+                    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="26dp"
+            android:text="LOCAL:" />
+
+            <EditText
+          android:id="@+id/local"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_alignLeft="@+id/ratingBar1"
+          android:layout_below="@+id/imageView1"
+          android:layout_marginTop="0dp"
+          android:ems="10" />
+            
+           
+            
+                                <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="26dp"
+            android:text="TIPO:" />
+
+            <EditText
+          android:id="@+id/tipo"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_alignLeft="@+id/ratingBar1"
+          android:layout_below="@+id/imageView1"
+          android:layout_marginTop="0dp"
+          android:ems="10" />
+            
+            
+            
+            
+                    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="26dp"
+            android:text="COMENTARIOS:" />
+
+            <EditText
+          android:id="@+id/comentario"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_alignLeft="@+id/ratingBar1"
+          android:layout_below="@+id/imageView1"
+          android:layout_marginTop="0dp"
+          android:ems="10" />
+
+
+             <TextView
+            android:id="@+id/textView2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="26dp"
+            android:text="SERVICIO:" />
+             
+                   <RatingBar
+            android:id="@+id/servicio"
+            android:layout_width="286dp"
+            android:layout_height="fill_parent" />
+                   
+                   
+                   
+              <TextView
+            android:id="@+id/textView2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="26dp"
+            android:text="PRODUCTO:" />
+             
+                   <RatingBar
+            android:id="@+id/producto"
+            android:layout_width="286dp"
+            android:layout_height="fill_parent" />              
+            
+                   
+                   
+             <TextView
+            android:id="@+id/textView2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="26dp"
+            android:text="PRECIO | CALIDAD:" />
+             
+                   <RatingBar
+            android:id="@+id/precio"
+            android:layout_width="286dp"
+            android:layout_height="fill_parent" /> 
+
+                   
+                   
+             <TextView
+            android:id="@+id/textView2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="26dp"
+            android:text="INSTALACIONES:" />
+             
+                   <RatingBar
+            android:id="@+id/instalaciones"
+            android:layout_width="286dp"
+            android:layout_height="fill_parent" />    
+            
+                   
+             <TextView
+            android:id="@+id/textView2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="26dp"
+            android:text="VARIEDAD:" />
+             
+                   <RatingBar
+            android:id="@+id/variedad"
+            android:layout_width="286dp"
+            android:layout_height="fill_parent" />    
+            
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="318dp"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/quickContactBadge1"
+            android:layout_centerHorizontal="true"
+            android:onClick="Actualizar_Review"
+            android:text="GUARDAR" />
+            
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="318dp"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/quickContactBadge1"
+            android:layout_centerHorizontal="true"
+            android:text="INGRESE TIENDA | NEGOCIO" />        
+    </LinearLayout>
+    
+</ScrollView>
