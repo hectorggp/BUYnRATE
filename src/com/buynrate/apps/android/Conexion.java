@@ -1,12 +1,9 @@
-package arqui2.clase.proyecto_final;
+package com.buynrate.apps.android;
 
-import java.io.PrintWriter;
-import java.io.StringWriter;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
 import java.util.LinkedList;
 
 import android.util.Log;
