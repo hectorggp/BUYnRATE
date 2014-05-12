@@ -1,7 +1,8 @@
-package com.buynrate.apps.android;
+package com.buynrate.apps.android.activities;
 
 import java.sql.SQLException;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -9,11 +10,16 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.buynrate.apps.android.R;
+import com.buynrate.apps.android.utils.Conexion;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -43,7 +49,6 @@ public class MainActivity extends ActionBarActivity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
-        
         
     }
 
@@ -160,6 +165,22 @@ public class MainActivity extends ActionBarActivity {
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             return rootView;
+        }
+        
+        @Override
+        public void onActivityCreated(Bundle savedInstanceState) {
+        	super.onActivityCreated(savedInstanceState);
+        	
+            getActivity().findViewById(R.id.btnSubmit).setOnClickListener(new OnClickListener() {
+    			
+    			@Override
+    			public void onClick(View arg0) {
+    				String id = ((EditText) getActivity().findViewById(R.id.mall)).getText().toString();
+    				Intent intent = new Intent(getActivity(), CalificarTiendaActivity.class);
+    				intent.putExtra("id_tienda", Long.valueOf(id));
+    				startActivity(intent);
+    			}
+    		});
         }
     }
 

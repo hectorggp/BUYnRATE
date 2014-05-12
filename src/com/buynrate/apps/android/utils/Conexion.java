@@ -1,4 +1,4 @@
-package com.buynrate.apps.android;
+package com.buynrate.apps.android.utils;
 
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -122,7 +122,7 @@ public class Conexion {
     	System.out.println( "cantidad de review = " + cantidad );
     	String operacion = "";
     	if ( cantidad == 0 ){
-    		//inserta
+    		//inserta 
     		operacion = String.format( "INSERT INTO %s.Review ( servicio, producto, precioCalidad, instalaciones, variedad, comentario, Tienda_idTienda, Tienda_Tipo_idTipo, Usuario_idUsuario ) VALUES ( %d, %d, %d, %d, %d, '%s', %s, %s, %s );", bd, servicio, producto, precioCalidad, instalaciones, variedad, comentario, idTienda, idTipo, idUsuario );
     		System.out.println( "INSERTANDO review" );
     	}else{
